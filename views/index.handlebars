@@ -1,0 +1,50 @@
+<div class="container">
+
+    <div class="hero-burger">
+        <h1>Burgers!</h1>
+        <img src="https://media1.s-nbcnews.com/j/newscms/2019_21/2870431/190524-classic-american-cheeseburger-ew-207p_d9270c5c545b30ea094084c7f2342eb4.fit-760w.jpg" alt="hamburger">
+    </div>
+
+    <div class="wrapper row">
+        <div class="burgers-to-try col-6">
+            <h2>Burgers you need to try!</h2>
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{> burgers/burger-block devoured=true}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="burgers-devoured col-6">
+            <h2>Burgers that are devoured!</h2>
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                {{> burgers/burger-block devoured=false}}
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <div class="add-burger">
+        <h2>Add a burger</h2>
+        <form class="create-form">
+
+            <div class="form-group">
+                <label for="ca">Burger Name:</label>
+                <input type="text" id="ca" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="devoured">Devoured?</label><br>
+                <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+                <input type="radio" name="devoured" value="0"> Not Devoured
+            </div>
+
+            <button type="submit" class="btn btn-success">Add burger</button>
+        </form>
+    </div>
+</div>

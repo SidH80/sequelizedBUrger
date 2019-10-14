@@ -11,7 +11,7 @@
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
-                {{> burgers/burger-block devoured=true}}
+                {{> burgers/burger-block id=id name=name devoured=true}}
                 {{/unless}}
                 {{/each}}
             </ul>
@@ -19,10 +19,11 @@
 
         <div class="burgers-devoured col-6">
             <h2>Burgers that are devoured!</h2>
+
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}
-                {{> burgers/burger-block devoured=false}}
+                {{> burgers/burger-block id=id name=name devoured=false}}
                 {{/if}}
                 {{/each}}
             </ul>

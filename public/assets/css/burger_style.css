@@ -52,17 +52,33 @@ img {
 }
 
 .btn-action {
-  background-color: #e97e22;
-  border: 1px solid #e97e22;
+  border: 1px solid #a55b1a;
+  background-color: #a55b1a;
   color: #fff;
   margin: 2px;
   border-radius: 20px
 }
 
-.btn-try {
+.btn-delete {
   background-color: black;
   border: 1px solid #e97e22;
   color: #9e9a97;
   margin: 2px;
   border-radius: 20px
 }
+
+.btn-action:hover,
+.btn-action:active {
+  background-color: #e97e22;
+  border: 1px solid #e97e22;
+  color: #fff;
+}
+
+.btn-delete:hover,
+.btn-delete:active {
+  border: 1px solid #a55b1a;
+  color: #fff;
+}
+
+
+

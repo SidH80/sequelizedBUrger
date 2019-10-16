@@ -11,7 +11,8 @@
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
-                {{> burgers/burger-block id=id name=name devoured=true}}
+                {{> burgers/burger-block id=id name=name devoured=true customer_name=customer_name}}
+                {{customer_name}}
                 {{/unless}}
                 {{/each}}
             </ul>
@@ -23,7 +24,9 @@
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}
-                {{> burgers/burger-block id=id name=name devoured=false}}
+                {{> burgers/burger-block id=id name=name devoured=false
+                customer_name=customer_name}}
+                {{customer_name}}
                 {{/if}}
                 {{/each}}
             </ul>
@@ -35,8 +38,9 @@
         <form class="create-form">
 
             <div class="form-group">
-                <label for="ca">Burger Name:</label>
-                <input type="text" id="ca" name="name">
+                <label for="ca"></label>
+                <input type="text" id="ca" name="name" placeholder="Burger Name">
+                <input type="text" id="customer_name" name="name" placeholder="Customer Name">
             </div>
 
             <div class="form-group">

@@ -1,9 +1,4 @@
-USE burgers_db;
+USE sequelize_burger;
 
-INSERT INTO burgers (name) VALUES ('Beef Burger');
-INSERT INTO burgers (name) VALUES ('Elk Burger');
-INSERT INTO burgers (name) VALUES ('Portobello Mushroom Burger');
-INSERT INTO burgers (name) VALUES ('Turkey Burger', true);
-INSERT INTO burgers (name) VALUES ('Impossible Burger', true);
-INSERT INTO burgers (name) VALUES ('Whiskey King Burger', true);
-INSERT INTO burgers (name) VALUES ('Luger Burger', true);
+INSERT INTO burgers (name, customer_name) VALUES ('Beef Burger', 'customer 1');
+INSERT INTO burgers (name, customer_name) VALUES ('Elk Burger', 'customer 2');

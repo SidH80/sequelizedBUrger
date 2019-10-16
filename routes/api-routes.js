@@ -31,7 +31,8 @@ module.exports = function(app) {
     db.Burger.create(
       {
         name: req.body.name,
-        devoured: req.body.devoured
+        devoured: req.body.devoured,
+        customer_name: req.body.customer_name
       }
       ).then(function(dbBurger) {
       // We have access to the new Burger as an argument inside of the callback function

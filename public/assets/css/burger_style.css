@@ -3,7 +3,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: beige;
-  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   text-align: center;
   background-position: center;
   height: 100vh;

@@ -1,8 +1,8 @@
 <div class="container">
 
     <div class="hero-burger">
-        <h1>Burgers!</h1>
-        <img src="https://media1.s-nbcnews.com/j/newscms/2019_21/2870431/190524-classic-american-cheeseburger-ew-207p_d9270c5c545b30ea094084c7f2342eb4.fit-760w.jpg" alt="hamburger">
+        <h1>Burgers! Burgers! Burgers!</h1>
+        <img src="https://bigseventravel.com/wp-content/uploads/2019/10/Apache-Burger-Grill.jpg" alt="hamburger">
     </div>
 
     <div class="wrapper row">
@@ -11,8 +11,7 @@
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
-                {{> burgers/burger-block id=id name=name devoured=true customer_name=customer_name}}
-                {{customer_name}}
+                {{> burgers/burger-block id=id name=name devoured=true customer_name=customer_name how_many=how_many}}
                 {{/unless}}
                 {{/each}}
             </ul>
@@ -25,8 +24,7 @@
                 {{#each burgers}}
                 {{#if devoured}}
                 {{> burgers/burger-block id=id name=name devoured=false
-                customer_name=customer_name}}
-                {{customer_name}}
+                customer_name=customer_name how_many=how_many}}
                 {{/if}}
                 {{/each}}
             </ul>
@@ -43,13 +41,17 @@
                 <input type="text" id="customer_name" name="name" placeholder="Customer Name">
             </div>
 
+            <div class="for-group">
+                <input type="text" id="how_many" name="name" placeholder="How Many?">
+            </div>
+
             <div class="form-group">
                 <label for="devoured">Devoured?</label><br>
                 <input type="radio" name="devoured" value="1" checked> Devoured!<br>
                 <input type="radio" name="devoured" value="0"> Not Devoured
             </div>
 
-            <button type="submit" class="btn btn-success">Add burger</button>
+            <button type="submit" class="btn btn-action">Add burger</button>
         </form>
     </div>
 </div>

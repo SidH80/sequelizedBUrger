@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url("/assets/img/south-bank-honest-burgers-restaurant-3 (1).jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url("http://gritsandgrids.s3.amazonaws.com/media/2017/02/Shade-Burger-YOD-studio-11.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: beige;
@@ -19,7 +19,7 @@ li {
   margin: 5px;
   background: black;
   border-radius: 15px;
-  border: 1px solid #ffd5
+  border: 1px solid #e97e22;
 }
 
 .label {
@@ -42,15 +42,27 @@ li {
 }
 
 img {
-  border-radius: 65%;
-  height: 250px;
-  width: 350px;
+  border-radius: 80%;
+  height: 270px;
+  width: 527px;
 }
 
 .add-burger {
   text-align: center;
 }
 
-.btn {
-  border-radius: 25px;
+.btn-action {
+  background-color: #e97e22;
+  border: 1px solid #e97e22;
+  color: #fff;
+  margin: 2px;
+  border-radius: 20px
+}
+
+.btn-try {
+  background-color: black;
+  border: 1px solid #e97e22;
+  color: #9e9a97;
+  margin: 2px;
+  border-radius: 20px
 }

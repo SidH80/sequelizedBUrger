@@ -3,6 +3,7 @@ module.exports = function(sequelize, DataTypes) {
     name: DataTypes.STRING,
     devoured: DataTypes.BOOLEAN,
     customer_name: DataTypes.TEXT,
+    how_many: DataTypes.INTEGER,
   });
   return Burger;
 };

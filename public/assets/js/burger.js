@@ -31,6 +31,7 @@ $(function() {
         name: $("#ca").val().trim(),
         devoured: $("[name=devoured]:checked").val().trim(),
         customer_name: $("#customer_name").val().trim(),
+        how_many: $("#how_many").val().trim(),
       };
 
       console.log(newBurger);

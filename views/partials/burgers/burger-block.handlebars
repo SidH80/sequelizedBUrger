@@ -1,11 +1,11 @@
 <li>
-	{{name}}
+	{{how_many}} {{name}}(s)
 
-	<button class="change-devoured btn btn-primary" data-id="{{id}}" data-newDevoured="{{devoured}}">
+	<button class="change-devoured btn-action" data-id="{{id}}" data-newDevoured="{{devoured}}">
 		{{#if devoured}}Chow Down!{{else}}Try it again!{{/if}}
 	</button>
 
-	<button class="delete-burger btn btn-danger" data-id="{{id}}">DELETE!</button>
+	<button class="delete-burger btn-try" data-id="{{id}}">Delete</button>
 
-	{{customer_name}}
+	Patron: {{customer_name}}
 </li>

@@ -1,26 +1,26 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "sequelize_burger",
-    "host": "127.0.0.1",
+    "username": "shmkk17u5vvbsi1v",
+    "password": "cw8uj2chvpmz4pd2",
+    "database": "cy4267zt2t9f3j6m",
+    "host": "m7nj9dclezfq7ax1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": false
+    "username": "shmkk17u5vvbsi1v",
+    "password": "cw8uj2chvpmz4pd2",
+    "database": "cy4267zt2t9f3j6m",
+    "host": "m7nj9dclezfq7ax1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "port": 3306,
+    "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": false
+    "username": "shmkk17u5vvbsi1v",
+    "password": "cw8uj2chvpmz4pd2",
+    "database": "cy4267zt2t9f3j6m",
+    "host": "m7nj9dclezfq7ax1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "port": 3306,
+    "dialect": "mysql"
   }
 }
